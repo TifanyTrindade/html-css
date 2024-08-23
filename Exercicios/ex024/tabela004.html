@@ -20,7 +20,6 @@
         #cor{
             background-color: rgb(6, 6, 131);
             color: white;
-            font-weight: bolder;
         }
 
     </style>
@@ -30,13 +29,13 @@
 
     <table>
         <tr>
-            <td id="cor">Grupo</td>
-            <td id="cor">Nomes</td>
-            <td id="cor"colspan="3">Filmes</td>
+            <th scope="col" id="cor">Grupo</th>
+            <th scope="col" id="cor">Nomes</th>
+            <th scope="colgroup" "cor"colspan="3">Filmes</t>
         </tr>
 
         <tr>
-            <td id="cor"rowspan="3">Mulheres</td>
+            <th scope="rowgroup" id="cor"rowspan="3">Mulheres</th>
             <td>Ana Maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -58,7 +57,7 @@
         </tr>
 
         <tr>
-            <td id="cor"rowspan="3">Homens</td>
+            <th scope="rowgroup" id="cor"rowspan="3">Homens</th>
             <td>Bruno Mendonça</td>
             <td>Intocáveis</td>
             <td>Amnésia</td>
@@ -78,6 +77,13 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+
+        <tfoot>
+            <tr>
+                <th scope="row" id="cor"colspan="4">Total</th>
+                <td >1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
